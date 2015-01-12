@@ -1,0 +1,31 @@
+.lightbox {
+	z-index: 1000
+}
+.lightbox>input{
+	display:none;
+}
+.lightbox>.content {
+	opacity: 0;
+	pointer-events: none;
+	transition: .3s opacity;
+	position: fixed;
+}
+.lightbox .overlay {
+	position:fixed;
+	top:0;
+	left: 0;
+	display:block;
+	height: 100%;
+	width: 100%;
+	opacity:0;
+	pointer-events: none;
+	transition: .5s opacity;
+	z-index: 0;
+}
+.lightbox>input:checked ~ .content{
+	opacity: 1;
+	pointer-events: auto;
+}
+.lightbox>input:checked ~ .overlay {
+	pointer-events: auto;
+}

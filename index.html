@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lightbox Demo</title>
+
+		<!-- CSS for lightbox functionality -->
+		<link rel="stylesheet" href="function.css" />
+		<!-- CSS for style of lightbox -->
+		<link rel="stylesheet" href="style.css" />
+		
+		<!-- Include jQuery for fallback and state management -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+		<!-- IE8- suppport -->
+		<!-- Fallback JS -->
+		<!--[if IE 8]>
+			<link rel="stylesheet" href="fallback.css">
+			<script type="text/javascript" src="fallback.jquery.js"></script>
+		<![endif]-->
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="fallback.css">
+			<script type="text/javascript" src="fallback.jquery.js"></script>
+		<![endif]-->
+		
+		<!-- JS for state management -->
+		<script type="text/javascript" src="state.js"></script>
+	</head>
+	<body>
+		<main>
+			<!-- change all instances of lightbox-ID for each lightbox on the page -->
+			<h1>Lightbox</h1>
+			<a href="https://github.com/WattyRev/lightbox/tree/master">View on GitHub</a><br/>
+			<label for="lightbox-ID">Click Me!</label>
+
+			
+			<div class="lightbox">
+				<input type="checkbox" id="lightbox-ID" />
+				<label class="overlay" for="lightbox-ID"></label>
+				<div class="content">
+					<label class="close" for="lightbox-ID">
+						<svg viewBox="0 0 1000 1000">
+							<path fill="none" stroke="#444444" stroke-width="100" stroke-miterlimit="10" d="M255.2,255.2l489.6,489.6 M744.8,255.2
+							L255.2,744.8"/>
+						</svg>
+					</label>
+					<h1>Your content can go here</h1>
+					<p>Put whatever html you want in here! Yay!!</p>
+					<p>Favor packaging over toy if it fits, i sits. Find something else more interesting under the bed nap all day. Have secret plans sleep in the bathroom sink eat and than sleep on your face but play time. All of a sudden cat goes crazy use lap as chair sleep nap chase mice chase ball of string then cats take over the world leave fur on owners clothes. Swat at dog has closed eyes but still sees you. Hopped up on catnip always hungry give attitude. Kick up litter stick butt in face rub face on everything, yet chase mice. Cat snacks leave dead animals as gifts, yet has closed eyes but still sees you. Sun bathe knock over christmas tree for has closed eyes but still sees you meowing non stop for food so ears back wide eyed yet always hungry. Chase mice. </p>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

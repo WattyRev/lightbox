@@ -1,0 +1,32 @@
+.lightbox>input:checked ~ .overlay {
+	background: #000;
+	opacity: .3;
+	pointer-events: auto;
+}
+.lightbox .content {
+	background: #fff;
+	-webkite-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	width: 700px;
+	max-height: 1000px;
+	padding: 15px;
+	top: 100px;
+	left: 50%;
+	margin-left: -365px;
+	overflow: auto;
+}
+.lightbox .close {
+	display:block;
+	width: 30px;
+	height: 30px;
+	float: right;
+	background: #e0e0e0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.lightbox .close>svg {
+	width: 100%;
+	height: 100%;
+}
