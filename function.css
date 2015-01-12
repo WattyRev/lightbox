@@ -1,3 +1,9 @@
+/**
+ * Lightbox Function
+ * Below are styles that control the functionality of the lightbox.
+ * Be hesitant to edit these.
+ */
+
 .lightbox {
 	z-index: 1000
 }
@@ -6,9 +12,12 @@
 }
 .lightbox>.content {
 	opacity: 0;
-	pointer-events: none;
+	-webkit-transition: .3s opacity;
+	-moz-transition: .3s opacity;
+	-o-transition: .3s opacity;
 	transition: .3s opacity;
 	position: fixed;
+	top:-200%;
 }
 .lightbox .overlay {
 	position:fixed;
@@ -17,15 +26,18 @@
 	display:block;
 	height: 100%;
 	width: 100%;
+	top:-200%;
 	opacity:0;
-	pointer-events: none;
-	transition: .5s opacity;
+	-webkit-transition: .3s opacity;
+	-moz-transition: .3s opacity;
+	-o-transition: .3s opacity;
+	transition: .3s opacity;
 	z-index: 0;
+	cursor:pointer;
 }
 .lightbox>input:checked ~ .content{
 	opacity: 1;
-	pointer-events: auto;
 }
 .lightbox>input:checked ~ .overlay {
-	pointer-events: auto;
+	top:0;
 }

@@ -1,7 +1,12 @@
+/**
+ * Lightbox Styles
+ * Below are styles for the visual appearance of the lightbox
+ * Modify this file as necessary to fit your mockups
+ */
+
 .lightbox>input:checked ~ .overlay {
 	background: #000;
 	opacity: .3;
-	pointer-events: auto;
 }
 .lightbox .content {
 	background: #fff;
@@ -12,10 +17,12 @@
 	width: 700px;
 	max-height: 1000px;
 	padding: 15px;
-	top: 100px;
 	left: 50%;
 	margin-left: -365px;
 	overflow: auto;
+}
+.lightbox>input:checked ~ .content {
+	top: 100px;
 }
 .lightbox .close {
 	display:block;
